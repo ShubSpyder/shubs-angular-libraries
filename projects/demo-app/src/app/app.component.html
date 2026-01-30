@@ -1,0 +1,36 @@
+<div class="demo-bg">
+	<div class="demo-content">
+		<h1>Glass motion effect</h1>
+
+		<img src="images/apple-pie-tea.webp" class="demo-img" alt="">
+
+
+		<div style="margin-bottom: 2rem;">
+			<h3>Draggable Glass Widget</h3>
+			<glass-motion-effect [draggable]="true" [blur]="10" [opacity]="0.1" borderRadius="20px">
+				<div style="min-width: 400px;">
+					<h4 style="margin:0">Content Header</h4>
+					<hr style="opacity: 0.2; margin: 10px 0;">
+					<p>This content is wrapped in a glassmorphism effect!</p>
+					<button (click)="$event.stopPropagation()">Action</button>
+				</div>
+			</glass-motion-effect>
+		</div>
+
+		<glass-motion-effect [blur]="15" [opacity]="0.15" borderRadius="24px">
+			<div style="display:flex;gap:12px;align-items:center">
+				<button CooldownBtn [maxClicks]="3" [coolDownTime]="2000" (coolDownState)="coolDownState($event)"
+					(click)="onClick()">Click me</button>
+				<div>Clicked: {{ clicks }}</div>
+			</div>
+			<p style="margin-top: 1rem;">This content is wrapped in a glassmorphism effect!</p>
+		</glass-motion-effect>
+
+		<div style="margin-top: 2rem;">
+			<h3>Customized Variation</h3>
+			<glass-motion-effect [blur]="5" [opacity]="0.3" bgColor="200, 100, 255" borderRadius="8px">
+				<p>Colorful glass effect</p>
+			</glass-motion-effect>
+		</div>
+	</div>
+</div>

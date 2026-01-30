@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/your-repo"
+    "url": "https://github.com/ShubSpyder/shubs-angular-libraries/tree/main/projects/cooldown-btn"
   },
   "sideEffects": false
 }

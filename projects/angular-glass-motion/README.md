@@ -3,7 +3,9 @@
 [![npm version](https://badge.fury.io/js/angular-glass-motion.svg)](https://www.npmjs.com/package/angular-glass-motion)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A modern Angular library that provides a beautiful glassmorphism effect component with optional drag-and-drop functionality. Create stunning UI elements with backdrop blur, transparency, and smooth animations.
+A modern Angular library that provides a beautiful glassmorphism effect component and a ready-to-use glass popup with optional drag-and-drop functionality. Create stunning UI elements with backdrop blur, transparency, and smooth animations.
+
+![Glass Motion Demo](./public/gifs/glass-motion-lib-demo.gif)
 
 ## Features
 
@@ -185,6 +187,45 @@ For older browsers, the component will gracefully degrade with a solid backgroun
 
 **Content Projection:**
 Uses `<ng-content>` to project any content inside the glass container.
+
+### Component: `AngularGlassMotionPopupComponent`
+
+**Selector:** `glass-motion-popup`
+
+**Inputs:**
+
+```typescript
+@Input() isOpen = false;           // Controls visibility
+@Input() closeOnBackdrop = true;   // Close when clicking overlay
+@Input() showCloseButton = true;   // Show built-in close button
+
+// Glass Effect Props (Passed through)
+@Input() blur = 10;
+@Input() opacity = 0.1;
+@Input() borderOpacity = 0.2;
+@Input() borderRadius = '16px';
+@Input() bgColor = '255, 255, 255';
+@Input() draggable = false;        // Drag the popup window
+```
+
+**Events:**
+
+```typescript
+@Output() close = new EventEmitter<void>();
+```
+
+**Usage:**
+
+```html
+<glass-motion-popup 
+  [isOpen]="showModal" 
+  (close)="showModal = false"
+  [blur]="15"
+  bgColor="100, 100, 255">
+  <h2>Popup Title</h2>
+  <p>Popup content...</p>
+</glass-motion-popup>
+```
 
 ## Advanced Examples
 

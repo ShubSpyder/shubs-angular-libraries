@@ -1,5 +1,6 @@
-import { Component, Input, HostListener, ElementRef, Renderer2, HostBinding } from '@angular/core';
+import { Component, HostListener, ElementRef, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { GlassMotionBase } from './glass-motion.base';
 
 @Component({
   selector: 'glass-motion-effect',
@@ -71,14 +72,7 @@ import { CommonModule } from '@angular/common';
     }
   `
 })
-export class AngularGlassMotionComponent {
-  @Input() blur = 10;
-  @Input() opacity = 0.1;
-  @Input() borderOpacity = 0.2;
-  @Input() borderRadius = '16px';
-  @Input() bgColor = '255, 255, 255';
-  @Input() draggable = false;
-
+export class AngularGlassMotionComponent extends GlassMotionBase {
   private isDragging = false;
   private startX = 0;
   private startY = 0;
@@ -89,7 +83,9 @@ export class AngularGlassMotionComponent {
     return `translate(${this.currentX}px, ${this.currentY}px)`;
   }
 
-  constructor(private el: ElementRef, private renderer: Renderer2) { }
+  constructor(private el: ElementRef, private renderer: Renderer2) {
+    super();
+  }
 
   @HostListener('mousedown', ['$event'])
   onMouseDown(event: MouseEvent) {

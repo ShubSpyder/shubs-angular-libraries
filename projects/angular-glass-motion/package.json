@@ -1,6 +1,6 @@
 {
   "name": "angular-glass-motion",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A modern Angular library for creating beautiful glassmorphism effects with optional drag-and-drop functionality",
   "keywords": [
     "angular",

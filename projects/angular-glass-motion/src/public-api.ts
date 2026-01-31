@@ -4,3 +4,4 @@
 
 export * from './lib/angular-glass-motion.service';
 export * from './lib/angular-glass-motion.component';
+export * from './lib/angular-glass-motion-popup.component';

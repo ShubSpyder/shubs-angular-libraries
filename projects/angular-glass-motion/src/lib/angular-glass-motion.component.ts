@@ -110,8 +110,8 @@ export class AngularGlassMotionComponent {
 
     const mouseUpListener = this.renderer.listen('document', 'mouseup', () => {
       this.isDragging = false;
-      mouseMoveListener(); // Unsubscribe
-      mouseUpListener();   // Unsubscribe
+      mouseMoveListener();
+      mouseUpListener();
     });
   }
 }

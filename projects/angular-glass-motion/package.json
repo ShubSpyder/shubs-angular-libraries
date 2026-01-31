@@ -1,6 +1,30 @@
 {
   "name": "angular-glass-motion",
   "version": "0.0.1",
+  "description": "A modern Angular library for creating beautiful glassmorphism effects with optional drag-and-drop functionality",
+  "keywords": [
+    "angular",
+    "glassmorphism",
+    "glass-effect",
+    "backdrop-filter",
+    "ui-components",
+    "angular-component",
+    "draggable",
+    "glass-motion",
+    "modern-ui",
+    "angular-library"
+  ],
+  "author": "Shubh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShubSpyder/shubs-angular-libraries.git",
+    "directory": "projects/angular-glass-motion"
+  },
+  "bugs": {
+    "url": "https://github.com/ShubSpyder/shubs-angular-libraries/issues"
+  },
+  "homepage": "https://github.com/ShubSpyder/shubs-angular-libraries/tree/main/projects/angular-glass-motion",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"

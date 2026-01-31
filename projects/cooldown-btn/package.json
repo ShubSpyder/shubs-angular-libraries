@@ -1,6 +1,6 @@
 {
   "name": "cooldown-btn",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": ">=14.0.0",
     "@angular/core": ">=14.0.0"
@@ -10,7 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShubSpyder/shubs-angular-libraries/tree/main/projects/cooldown-btn"
+    "url": "https://github.com/ShubSpyder/shubs-angular-libraries.git",
+    "directory": "projects/cooldown-btn"
   },
+  "bugs": {
+    "url": "https://github.com/ShubSpyder/shubs-angular-libraries/issues"
+  },
+  "homepage": "https://github.com/ShubSpyder/shubs-angular-libraries/tree/main/projects/cooldown-btn",
   "sideEffects": false
 }

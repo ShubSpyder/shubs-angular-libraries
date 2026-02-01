@@ -12,7 +12,6 @@ A modern Angular library that provides a beautiful glassmorphism effect componen
 - **Glassmorphism Effect** - Modern glass-like UI with backdrop blur and transparency
 - **Draggable Interface** - Optional drag-and-drop functionality
 - **Highly Customizable** - Control blur, opacity, colors, and borders
-- **Standalone Component** - Works seamlessly with Angular 15+ standalone APIs
 - **Responsive** - Works great on all screen sizes
 - **Performance Optimized** - Uses CSS transforms and will-change for smooth animations
 - **TypeScript Support** - Fully typed for better development experience
